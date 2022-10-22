@@ -85,6 +85,18 @@ main h1 {
     background-color: rgb(221, 134, 34);
 }
 
-@media (max-width: ) {
-    
+@media (max-width: 48rem) {
+    #main-header nav {
+        display: none;
+    }
+
+    main h1 {
+        text-align: center;
+        color: rgb(238,164,80);
+        font-size: 1.5rem;
+    }
+
+    #latest-products ul {
+        grid-template-columns: 100%;
+    }
 }
