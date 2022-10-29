@@ -12,7 +12,7 @@ color: #efb273;
 .menu-button {
     width: 3rem;
     height: 3rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
 }
@@ -32,6 +32,7 @@ color: #efb273;
     height: 80px;
 }
 
+
 #main-header nav a {color: #efb273; font-size: 1.25rem;}
 
 #main-header nav a:hover {color: #f1c190;}
@@ -44,9 +45,22 @@ color: #efb273;
     width: 100%;
     background-color: rgb(29, 26, 27);
     height: 100%;
-    /*position: fixed;
+    position: fixed;
     top: 0;
-    left: 0;*/
+    left: 0;
+    display: none;
+}
+
+#side-drawer:target {
+    display: block;
+}
+
+#side-drawer header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+    height: 80px;
 }
 
 #side-drawer ul {display: flex; 
@@ -114,6 +128,10 @@ main h1 {
     text-align: center;
 }
 
+.food-items h2 {
+    margin: 0 0 1rem 0;
+}
+
 .btn {
     background-color: rgb(228, 157, 44);
     color: #fff;
@@ -138,5 +156,9 @@ main h1 {
 
     #latest-products ul {
         grid-template-columns: 100%;
+    }
+
+    .menu-button {
+        display: flex;
     }
 }
